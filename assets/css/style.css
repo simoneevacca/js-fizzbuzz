@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(59, 0, 208);
+}
+
 #list {
     max-width: 1000px;
     margin: auto;
