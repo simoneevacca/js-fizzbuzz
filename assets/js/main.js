@@ -9,18 +9,24 @@ for (let i = 1; i <= 100; i++) {
     if (value % 3 == 0 && value % 5 == 0) {
         console.log('FizzBuzz');
         // elementList.insertAdjacentHTML('beforeend', `<li>${'FizzBuzz'}</li>`);
-        li.append('FizzBuzz')
-        elementList.append(li)
+        li.append('FizzBuzz');
+        elementList.append(li);
+        li.style.backgroundColor = "green";
+
     } else if (value % 3 == 0) {
         console.log('Fizz');
         // elementList.insertAdjacentHTML('beforeend', `<li>${'Fizz'}</li>`);
-        li.append('Fizz')
-        elementList.append(li)
+        li.append('Fizz');
+        elementList.append(li);
+        li.style.backgroundColor = "pink";
+
     } else if (value % 5 == 0) {
         console.log('Buzz');
         // elementList.insertAdjacentHTML('beforeend', `<li>${'Buzz'}</li>`);
         li.append('Buzz')
         elementList.append(li)
+        li.style.backgroundColor = "grey";
+
     } else {
         li.append(value)
         elementList.append(li)
