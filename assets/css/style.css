@@ -1,0 +1,13 @@
+#list {
+    max-width: 1000px;
+    margin: auto;
+    > li {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

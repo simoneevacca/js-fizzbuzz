@@ -7,16 +7,15 @@ for (let i = 1; i <= 100; i++) {
 
     if (value % 3 == 0 && value % 5 == 0) {
         console.log('FizzBuzz');
-        elementList.insertAdjacentHTML('beforebegin', `<li>${'FizzBuzz'}</li>`);
-
+        elementList.insertAdjacentHTML('beforeend', `<li>${'FizzBuzz'}</li>`);
+        
     } else if (value % 3 == 0) {
         console.log('Fizz');
-        elementList.insertAdjacentHTML('beforebegin', `<li>${'Fizz'}</li>`);
-    
+        elementList.insertAdjacentHTML('beforeend', `<li>${'Fizz'}</li>`);
     } else if (value % 5 == 0) {
         console.log('Buzz');
-        elementList.insertAdjacentHTML('beforebegin', `<li>${'Buzz'}</li>`);
+        elementList.insertAdjacentHTML('beforeend', `<li>${'Buzz'}</li>`);
     }
     console.log(value);
-    elementList.insertAdjacentHTML('beforebegin', `<li>${value}</li>`);
+    elementList.insertAdjacentHTML('beforeend', `<li>${value}</li>`);
 }
